@@ -1,0 +1,570 @@
+@media all and (max-width:1023px) {
+    .main_top {
+        width: 100%;
+        height: 50vw;
+        position: relative;
+    }
+    .main_header {
+        width: 100%;
+        height: 10vw;
+        padding: 10px 10px;
+        display: flex;
+        box-sizing: border-box;
+        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .main_logo {
+        width: 15%;
+        height: 50%;
+    }
+
+    .menu_icon {
+        width: 40%;
+        height: 40%;
+        margin-top: 10px;
+
+    }
+    .menu_box {
+        width: 40%;
+        height: 90vw;
+        background-color: black;
+        opacity: 70%;
+        position: fixed;
+        top: 10%;
+        padding: 0 30px;
+        padding-top: 40px;
+        box-sizing: border-box;
+        right: -40%;
+        transition-duration: 0.5s;
+
+    }
+    #ch_box {
+        display: none;
+    }
+
+    .la_but {
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin-top: 10px;
+        float: right;
+        cursor: pointer;
+    }
+    .in_box {
+        width: 100%;
+        height: 100%;
+    }
+
+    .in_box h3 {
+        width: 100%;
+        height: 4vw;
+        color: white;
+        border-bottom: 1px solid #00FF41;
+        display: block;
+        cursor: pointer;
+        line-height: 4vw;
+        font-size: 15px;
+        font-weight: 100;
+    }
+
+    .phto_box {
+        margin-top: 20px;
+        width: 100%;
+        height: 20vw;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        border: none;
+
+    }
+
+    .p_b_1{
+        background-image: url(../img/photo_box.png);
+    }
+    .p_b_2{
+        background-image: url(../img/photo_box_2.png) ;
+    }
+
+    #ch_box:checked~.menu_box {
+        right: 0;
+    }
+
+    .sns {
+        width: 100%;
+        height: 30%;
+        float: right;
+        background-image: url(../img/sns_bg-03.png);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: right bottom 15vw;
+
+    }
+    .main_banner {
+        width: 100%;
+        height: 50vw;
+        position: absolute;
+    }
+
+    .main_banner video {
+        width: 100%;
+        height: 50vw;
+        display: block;
+        object-fit: cover;
+    }
+    .main_wrap {
+        width: 100%;
+        height: 350vw;
+        position: relative;
+    }
+    .bg_wrap,.m_body {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .m_body {
+        background-image: url(../img/line_design.png);
+        background-position: right;
+        background-size: 100% 100%;
+        z-index: 999;
+    }
+    .con_wrap {
+        width: 100%;
+        height: 50vw;
+    }
+    .b_img {
+        width: 100%;
+        height: 50vw;
+    }
+
+    .b_img img {
+        object-fit: cover;
+    }
+
+    /* con_wrap_1 */
+    .con_wrap_1 {
+        overflow: hidden;
+    }
+
+    .title_box {
+        width: 100%;
+        height: 20px;
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    .main_box {
+        width: 100%;
+        height: 100%;
+    }
+
+    .main_product {
+        margin: 0 auto;
+        width: 100%;
+        height: 30vw;
+        position: relative;
+        margin-top: 50px;
+    }
+
+    .tab_wrap {
+        position: relative;
+        width: 100%;
+        height: 30vw;
+        background-image: url(../img/razor.png);
+        background-size: 20% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .label_wrap,
+    .con_wrap_sam {
+        position: absolute;
+    }
+    input {
+        display: none;
+    }
+
+    .label_wrap {
+        width: 20%;
+        height: 75%;
+        display: grid;
+        grid-template-rows: 30% 60% 10%;
+        top: 0;
+        left: 50%;
+        margin-left: -10%;
+        z-index: 1;
+    }
+    .label_but {
+        display: block;
+        width: 2.5vw;
+        height: 2.5vw;
+        cursor: pointer;
+    }
+    .label_but1 {
+        margin-left: 10%;
+    }
+    .label_but2 {
+        margin-left: 50%;
+    }
+
+    .con_wrap_sam {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+    }
+
+    .con_box {
+        width: 30%;
+        height: 40%;
+        opacity: 0;
+        transition-duration: 0.5s;
+        position: absolute;
+        display: flex;
+    }
+    .part_tx {
+        font-size: 2vw;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+    
+    .part_tx_2 {
+        order: 2;
+        margin-top: 10%;
+    }
+    .part {
+        width: 10vw;
+        border-radius: 50%;
+        height: 10vw;
+        overflow: hidden;
+        border: 0.9vw solid #00FF41;
+        box-sizing: border-box;
+    }
+
+    .part_2 {
+        width: 12vw;
+        height: 12vw;
+        order: 1;
+    }
+
+    .con_box1 {
+        left: 10%;
+    }
+
+    .con_box2 {
+        width: 35%;
+        right: 5%;
+        top: 10%;
+    }
+
+    .con_box3 {
+        top: 50%;
+        left: 5%;
+    }
+
+    .con_wrap_sam img {
+        transition-duration: 0.5s;
+    }
+
+    .con_wrap_sam img:hover {
+        transform: scale(120%);
+    }
+
+    #tab_1:checked~.con_wrap_sam>.con_box1 {
+        opacity: 1;
+    }
+
+    #tab_2:checked~.con_wrap_sam>.con_box2 {
+        opacity: 1;
+    }
+
+    #tab_3:checked~.con_wrap_sam>.con_box3 {
+        opacity: 1;
+    }
+
+    /* 해리끝 */
+    /* 해리끝 */
+    /* 해리끝 */
+    /* 해리끝 */
+
+    /* 송희 */
+    .fun_wrap {
+        width: 100%;
+        height: 50vw;
+    }
+
+    .inner_box {
+        width: 60%;
+        height: 70%;
+        margin: 5% auto;
+        position: relative;
+    }
+
+
+    .function {
+        width: 20vw;
+        height: 20vw;
+        border: 0.9vw solid #00FF41;
+        border-radius: 50%;
+        box-sizing: border-box;
+        overflow: hidden;
+        position: absolute;
+    }
+
+    .function img {
+        width: 100%;
+        height: 100%;
+    }
+    .fun_1 {
+        top: 0;
+        left: 20%;
+    }
+
+    .fun_2 {
+        top: 0;
+        left: 40%;
+    }
+
+    .fun_3 {
+        top: 40%;
+        left: 30%;
+    }
+
+    .text {
+        width: 25vw;
+        height: 20vw;
+        position: absolute;
+    }
+
+    .tx_1 {
+        top: 30%;
+        left: 70%;
+    }
+
+    .tx_2 {
+        top: 40%;
+        left: 0;
+    }
+
+    .tx_3 {
+        top: 10%;
+        left: 70%;
+    }
+
+    .text h3 {
+        font-size: 2.5vw;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+
+    .text .title_bottom,
+    .tx_3 .title_top {
+        font-size: 3.1vw;
+        font-weight: 700;
+        color: #00FF41;
+    }
+
+    .text .tx {
+        margin-top: 3.1vw;
+        font-size: 2vw;
+        line-height: 1.5;
+    }
+
+    /* .fun_wrap:hover .text {
+        opacity: 1;
+    } */
+
+
+    /* 현지 */
+    .con_wrap_5 {
+        width: 100%;
+        height: 50vw;
+        overflow: hidden;
+    }
+
+    .con_wrap_5_title {
+        width: 100%;
+        height: 20px;
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    .won_wrap {
+        width: 80%;
+        height: 30vw;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .bomo {
+        width: calc(100% / 3);
+        height: 30vw;
+        position: relative;
+    }
+
+    .bomo:nth-child(4) {
+        display: none;
+    }
+
+    .yhg_box {
+        width: 20vw;
+        height: 20vw;
+        border-radius: 50%;
+        background-position: center;
+        background-size: 100% 100%;
+        position: absolute;
+        top: 0.7vw;
+        left: 4vw;
+        /* box-sizing: border-box;
+        margin: 0 auto; */
+    }
+
+    .hy_wrap {
+        width: 100%;
+        height: 50%;
+    }
+
+    .hj_box1 {
+        background-image: url(../img/shavefoam_bg.jpg);
+    }
+
+    .hj_box2 {
+        background-image: url(../img/blade_bg.jpg);
+    }
+
+    .hj_box3 {
+        background-image: url(../img/facewash_bg.jpg);
+    }
+
+    .hj_box4 {
+        background-image: url(../img/moisture_bg.jpg);
+    }
+
+    .yhg_text {
+        text-align: center;
+        font-size: 1.5vw;
+        margin-top: 22vw;
+        font-weight: 700;
+
+    }
+
+    /* .hg_text {
+        display: none;
+        text-align: center;
+        font-size: 1.5vw;
+        font-weight: 500;
+        margin-top: 5%;
+        margin-left: -7%;
+        width: 90%;
+        margin: 0 auto;
+    } */
+
+    /* 윤정 */
+    .con_wrap_6 {
+        width: 100%;
+        height: 50vw;
+    }
+
+    .con_wrap_6 img {
+        object-fit: cover;
+    }
+
+    .con_wrap_7 {
+        width: 100%;
+        height: 50vw;
+        font-size: 15px;
+        margin: 0 auto;
+        padding-top: 20%;
+        box-sizing: border-box;
+    }
+
+    .slen_box {
+        width: 100%;
+        height: 10%;
+        margin: 0 auto;
+    }
+
+    .slko_box {
+        width: 50%;
+        height: 5%;
+        margin: 3% auto;
+    }
+
+
+
+    .slogan_en {
+        font-size: 3vw;
+        color: white;
+        letter-spacing: 4px;
+        text-align: center;
+    }
+
+    .slogan_ko {
+        font-size: 1.5vw;
+        color: #00FF41;
+        letter-spacing: 4px;
+        text-align: center;
+    }
+
+    .green_but {
+        width: 150px;
+        height: 60px;
+        margin: 0 auto;
+    }
+    .main_footer {
+        width: 100%;
+        height: 300px;
+        background-color: black;
+        padding: 50px 50px;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer_logo_box {
+        width: 100%;
+        height: 100px;
+        border-bottom: 2px solid white;
+        margin: 20px auto;
+    }
+
+    .footer_logo {
+        width: 250px;
+        height: 50px;
+        background-image: url(../img/foo_logo.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+    }
+    .footer_bottom {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .f_b_l_box {
+        width: 50%;
+        font-size:1vw;
+    }
+
+    .f_b_r_box {
+        width: 50%;
+        display: flex;
+        font-size: 0.8vw;
+        letter-spacing: -1.5px;
+        justify-content: space-between;
+    }
+    .f_b_r_box a {
+        color:white;
+    }
+
+    .f_b_text_1 {
+        color: white;
+    }
+
+}

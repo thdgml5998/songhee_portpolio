@@ -1,0 +1,573 @@
+@media all and (min-width:1024px) {
+    .main_top {
+        width: 100%;
+        height: 56vw;
+        position: relative;
+    }
+    .main_header {
+        width: 100%;
+        height: 100px;
+        padding: 25px 50px;
+        display: flex;
+        box-sizing: border-box;
+        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        
+    }
+
+    .main_logo {
+        width: 210px;
+        height: 50px;
+    }
+
+    .menu_icon {
+        width: 40%;
+        height: 50vw;
+        margin-top: 10px;
+    }
+    #ch_box {
+        display: none;
+    }
+
+    .la_but {
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+        float: right;
+    }
+    .la_but img {
+        width: 100%;
+        height: 100%;
+    }
+    .menu_box {
+        width: 30%;
+        height: 800px;
+        background-color: black;
+        opacity: 70%;
+        /* line-height: 100%; */
+        position: fixed;
+        top: 100px;
+        right: -40%;
+        padding: 30px 40px;
+        box-sizing: border-box;
+        transition-duration: 0.5s;
+    }
+
+    .in_box {
+        width: 100%;
+        height: 50%;
+    }
+    .in_box h3{
+        width: 100%;
+        height: 50px;
+        color: white;
+        border-bottom: 3px solid #00FF41;
+        cursor: pointer;
+        line-height: 50px;
+        font-size: 1rem;
+    }
+    .phto_box {
+        width: 100%;
+        height: 20vw;
+        background-image: url(../img/photo_box.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border: none;
+        object-fit: cover;
+
+    }
+     .p_b_2{
+        display: none;
+    }
+
+    #ch_box:checked~.menu_box{
+        right: 0;
+    }
+    .sns{
+        width: 55%;
+        height: 3vw;
+        float: right;
+        margin-top: 100px;
+        background-image: url(../img/sns_bg-03.png);
+        background-size: 90%;
+        background-repeat: no-repeat;
+    }
+    .main_banner {
+        width: 100%;
+        height: 56vw;
+        position: absolute;   
+    }
+    .main_banner video {
+        width: 100%;
+        height: 56vw;
+        display: block;
+        object-fit: cover;
+    }
+    .main_wrap {
+        width: 100%;
+        height: 392vw;
+        position: relative;
+    }
+
+    .bg_wrap,.m_body {
+        width: 100%;
+        height: 392vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .m_body {
+        background-image: url(../img/line_design.png);
+        background-position: right;
+        background-size: 100% 100%;
+        z-index: 99;
+    }
+    .con_wrap {
+        width: 100%;
+        height: 56vw;
+    }
+    .b_img{
+        width: 100%;
+        height: 56vw;
+    }
+    
+    /* con_wrap_1 */
+    .con_wrap_1 {
+        overflow: hidden;
+    }
+    .title_box {
+        width: 100%;
+        height: 90px;
+        font-size: 2rem;
+        text-align: center;
+        margin: 30px auto;
+        line-height: 90px;
+    }
+
+    .main_product {
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 100%;
+        height: 40vw;
+        position: relative;
+    }
+
+    .tab_wrap {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/razor.png);
+        background-size: 20% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .label_wrap,
+    .con_wrap_sam {
+        position: absolute;
+    }
+
+
+    input {
+        display: none;
+    }
+
+    .label_wrap {
+        width: 20%;
+        height: 32vw;
+        display: grid;
+        grid-template-rows: 30% 60% 10%;
+        top: 0;
+        left: 50%;
+        margin-left: -10%;
+        z-index: 1;
+    }
+
+    .label_but {
+        display: block;
+        width: 2.5vw;
+        height: 2.5vw;
+        cursor: pointer;
+    }
+
+
+    .label_but1 {
+        margin-left: 10%;
+    }
+    .label_but2 {
+        margin-left: 50%;
+    }
+
+
+    .con_wrap_sam {
+        width: 100%;
+        height: 40vw;
+        top: 0;
+        left: 0;
+        /* margin-left: -50%; */
+        overflow: hidden;
+    }
+
+    .con_box {
+        width: 30%;
+        height: 50%;
+        opacity: 0;
+        transition-duration: 0.5s;
+        position: absolute;
+        display: flex;
+    }
+
+    .con_box1 {
+        left: 10%;
+    }
+
+    .con_box2 {
+        right: 10%;
+        top: 20%;
+    }
+
+    .con_box3 {
+        top: 50%;
+        left: 5%;
+    }
+
+    .con_wrap_sam img {
+        transition-duration: 0.5s;
+    }
+
+    .con_wrap_sam img:hover {
+        transform: scale(120%);
+    }
+    .part_tx {
+        font-size: 1.5vw;
+        font-weight: 600;
+    }
+    .part_tx_1 {
+        margin-top: 10%;
+    }
+    .part_tx_2 {
+        order: 2;
+        margin-top: 10%;
+    }
+    .part {
+        width: 15vw;
+        border-radius: 50%;
+        height: 15vw;
+        overflow: hidden;
+        border: 10px solid #00FF41;
+        box-sizing: border-box;
+    }
+
+    .part_2 {
+        order: 1;
+    }
+
+    #tab_1:checked~.con_wrap_sam>.con_box1 {
+        opacity: 1;
+    }
+
+    #tab_2:checked~.con_wrap_sam>.con_box2 {
+        opacity: 1;
+    }
+
+    #tab_3:checked~.con_wrap_sam>.con_box3 {
+        opacity: 1;
+    }
+
+    /* 숨김메뉴 */
+
+    
+    /* 송희 */
+    /* 송희 */
+    /* 송희 */
+    /* 송희 */
+    .fun_wrap {
+        width: 100%;
+        height: 56vw;
+    }
+
+    .inner_box {
+        width: 60%;
+        height: 60%;
+        margin: 10% auto;
+        /* padding: 100px;
+        box-sizing: border-box; */
+        position: relative;
+    }
+    .function {
+        width: 20vw;
+        height: 20vw;
+        border: 10px solid #00FF41;
+        border-radius: 50%;
+        box-sizing: border-box;
+        overflow: hidden;
+        position: absolute;
+    }
+
+    .fun_1 {
+        top: 0;
+        left: 20%;
+    }
+
+    .fun_2 {
+        top: 0;
+        left: 40%;
+    }
+
+    .fun_3 {
+        top: 30%;
+        left: 30%;
+    }
+
+    .text {
+        width: 500px;
+        height: 300px;
+        position: absolute;
+        display: none;
+    }
+
+    .tx_1 {
+        top: 20%;
+        left: 70%;
+    }
+
+    .tx_2 {
+        top: 40%;
+        left: 0;
+    }
+
+    .tx_3 {
+        top: 0;
+        left: 70%;
+    }
+
+    .text h3 {
+        font-size: 2.5vw;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+
+    .text .title_bottom,
+    .tx_3 .title_top {
+        font-size: 3.1vw;
+        font-weight: 700;
+        color: #00FF41;
+    }
+
+    .text .tx {
+        margin-top: 50px;
+        font-size: 1.5vw;
+        line-height: 1.5;
+    }
+
+    /* --송희 끝-- */
+    /* --송희 끝-- */
+    /* --송희 끝-- */
+    /* --송희 끝-- */
+
+    /* 현지 */
+    /* 현지 */
+    /* 현지 */
+    /* 현지 */
+    .con_wrap_5_title {
+        width: 100%;
+        height: 150px;
+        font-size: 2rem;
+        text-align: center;
+        padding: 30px 0;
+        box-sizing: border-box;
+        line-height: 90px;
+    }
+
+    .won_wrap {
+        width: 80%;
+        height: 56vw;
+        margin: 5% auto;
+        display: flex;
+    }
+
+    .bomo {
+        width: calc(100% / 3);
+        height: 20vw;
+        position: relative;
+    }
+
+    /* 혹시 몰라서 임시로 만들어둠
+    .yhg_box:hover{
+        opacity: 50%;
+    }
+     */
+    .yhg_box {
+        width:90%;
+        height: 20vw;
+        border-radius: 50%;
+        background-position: center;
+        background-size: 100% 100%;
+        position: absolute;
+        top: 0.7vw;
+        left: 4vw;
+        /* box-sizing: border-box;
+        border: 10px solid #00FF41; */
+        margin: 0 auto;
+        transition: 0.5s;
+
+    }
+
+    .hy_wrap {
+        width: 100%;
+        height: 50%;
+    }
+
+    .hj_box1 {
+        background-image: url(../img/shavefoam_bg.jpg);
+    }
+
+    .hj_box2 {
+        background-image: url(../img/blade_bg.jpg);
+    }
+
+    .hj_box3 {
+        background-image: url(../img/facewash_bg.jpg);
+    }
+
+    .hj_box4 {
+        background-image: url(../img/moisture_bg.jpg);
+    }
+
+    .hj_box2,
+    .hj_box4 {
+        margin-top: 50%;
+    }
+
+    .yhg_text {
+        text-align: center;
+        font-size: 1.5vw;
+        margin-top: 22vw;
+        font-weight: 700;
+        display: none;
+    }
+    
+
+    .hg_text {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-top: 5%;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* --현지 끝-- */
+    /* --현지 끝-- */
+    /* --현지 끝-- */
+    /* --현지 끝-- */
+
+
+    /* 윤정 */
+    /* 윤정 */
+    /* 윤정 */
+    /* 윤정 */
+    .con_wrap_6 {
+        width: 100%;
+        height: 56vw;
+        position: relative;
+    }
+
+    .con_wrap_6 img {
+        object-fit: cover;
+    }
+
+    .con_wrap_7 {
+        width: 100%;
+        height: 56vw;
+        margin: 0 auto;
+        padding-top: 15%;
+        box-sizing: border-box;
+    }
+
+    .slen_box {
+        width: 100%;
+        height: 100px;
+        margin: 0 auto;
+    }
+
+    .slko_box {
+        width: 50%;
+        height: 50px;
+        margin: 0px auto;
+    }
+
+    .slogan_en {
+        font-size: 3em;
+        color: white;
+        letter-spacing: 4px;
+        text-align: center;
+    }
+
+    .slogan_ko {
+        font-size: 1.5rem;
+        letter-spacing: 4px;
+        text-align: center;
+    }
+    .green_but {
+        width: 200px;
+        height: 80px;
+        margin: 0 auto;
+    }
+    .main_footer {
+        width: 100%;
+        height: 350px;
+        background-color: black;
+        padding: 90px 90px;
+        box-sizing: border-box;
+        position: relative;
+        float: left;
+    }
+
+    .footer_logo_box {
+        width: 100%;
+        height: 100px;
+        border-bottom: 2px solid white;
+        margin-bottom: 50px;
+    }
+
+    .footer_logo {
+        width: 300px;
+        height: 50px;
+        background-image: url(../img/foo_logo.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+    }
+
+    .footer_bottom {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .f_b_l_box {
+        width: 50%;
+        font-size:1vw;
+    }
+
+    .f_b_r_box {
+        width: 40%;
+        display: flex;
+        font-size: 0.8vw;
+        letter-spacing: -1.5px;
+        justify-content: space-between;
+    }
+    .f_b_r_box a {
+        color:white;
+    }
+    .f_b_text_1 {
+        color:white;
+    }
+
+    
+}
