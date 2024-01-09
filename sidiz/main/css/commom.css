@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+    /* cursor: url(../img/main/map_search.png),default; */
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+html,body {
+    height: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+body {
+    color: #333;
+    /* cursor: url(../img/main/map_search.png),default; */
+}

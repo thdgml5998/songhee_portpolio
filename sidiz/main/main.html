@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link href="css/commom.css" rel="stylesheet" type="text/css">
+    <link href="css/pc.css" rel="stylesheet" type="text/css">
+    <link href="css/tab.css" rel="stylesheet" type="text/css">
+    <link href="css/mo.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Noto+Serif+KR:wght@400;900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header class="main_header pc_header">
+            <div class="inner_align header_in">
+                <h1 class="header_logo">
+                    <a href="#">
+                        <img src="./img/white_logo.png" alt="헤더로고">
+                    </a>
+                </h1>
+                <nav class="header_menu_wrap">
+                    <ul class="top_menu_wrap">
+                        <li class="top_menu">
+                            ABOUT
+                            <ul class="bottom_menu_wrap">
+                                <li class="bottom_menu">
+                                    <a href="https://kr.sidiz.com/company/business">
+                                        BRAND STORY
+                                    </a>
+                                </li>
+                                <li class="bottom_menu">
+                                    <a href="https://kr.sidiz.com/company/news">
+                                        NEWS
+                                    </a>
+                                </li>
+                                <li class="bottom_menu">
+                                    <a href="https://kr.sidiz.com/company/safety-health-management">
+                                        안전보건경영방침
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="top_menu">
+                            PRODUCTS
+                            <ul class="bottom_menu_wrap">
+                                <li class="bottom_menu">
+                                    <a href="https://kr.sidiz.com/product/category/gaming-chairs">
+                                        게이밍체어
+                                    </a>
+                                </li>
+                                <li class="bottom_menu">
+                                    <a href="https://kr.sidiz.com/product/category/task-chairs">
+                                        데스크체어
+                                    </a>
+                                </li>
+                                <li class="bottom_menu">
+                                    <a href="https://kr.sidiz.com/product/category/study-chairs">
+                                        스터디체어
+                                    </a>
+                                </li>
+                                <li class="bottom_menu">
+                                    <a href="https://kr.sidiz.com/product/category/baby-chairs">
+                                        키즈&베이비체어
+                                    </a>
+                                </li>
+                                <li class="bottom_menu">
+                                    <a href="https://kr.sidiz.com/product/category/interior-chairs">
+                                        인테리어체어
+                                    </a>
+                                </li>
+                                <li class="bottom_menu">
+                                    <a href="https://kr.sidiz.com/product/category/accessories">
+                                        액세서리
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="top_menu">
+                            SUPPORT
+                            <ul class="bottom_menu_wrap">
+                                <li class="bottom_menu">
+                                    <a href="https://kr.sidiz.com/customer/faq/all">
+                                        FAQ
+                                    </a>
+                                </li>
+                                <li class="bottom_menu">
+                                    <a href="https://kr.sidiz.com/customer/qna">
+                                        친절상담
+                                    </a>
+                                </li>
+                                <li class="bottom_menu">
+                                    <a href="https://kr.sidiz.com/customer/as">
+                                        A/S 신청
+                                    </a>
+                                </li>
+                                <li class="bottom_menu">
+                                    <a href="https://kr.sidiz.com/customer/warranty">
+                                        A/S 안내
+                                    </a>
+                                </li>
+                                <li class="bottom_menu">
+                                    <a href="https://kr.sidiz.com/store">
+                                        매장 찾기
+                                    </a>
+                                </li>
+                                <li class="bottom_menu">
+                                    <a href="https://kr.sidiz.com/customer/serial">
+                                        품질 보증 서비스
+                                    </a>
+                                </li>
+                                <li class="bottom_menu">
+                                    <a href="https://kr.sidiz.com/customer/manual">
+                                        제품가이드 다운로드
+                                    </a>
+                                </li>
+                                <li class="bottom_menu">
+                                    <a href="https://kr.sidiz.com/customer/catalog">
+                                        카탈로그 다운로드
+                                    </a>
+                                </li>
+                                <li class="bottom_menu">
+                                    <a href="https://kr.sidiz.com/customer/bulk">
+                                        대량 구매 문의
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <header class="main_header tab_header">
+            <div class="inner_align header_in">
+                <h1 class="header_logo">
+                    <a href="https://kr.sidiz.com/">
+                        <img src="./img/white_logo.png" alt="헤더로고">
+                    </a>
+                </h1>
+                <div class="hamburger">
+                    <img src="./img/hamburger_icon.svg" alt="햄버거버튼">
+                    <nav class="hamburger_menu_wrap">
+                        <ul class="hamburger_top_menu_wrap">
+                            <li class="hamburger_top_menu">
+                                ABOUT<br><br>
+                                <ul class="hamburger_bottom_menu_wrap">
+                                    <li class="hamburger_bottom_menu">
+                                        <a href="https://kr.sidiz.com/company/business">
+                                            HISTORY
+                                        </a>
+                                    </li>
+                                    <li class="hamburger_bottom_menu">
+                                        <a href="https://kr.sidiz.com/company/news">
+                                            NEWS
+                                        </a>
+                                    </li>
+                                    <li class="hamburger_bottom_menu">
+                                        <a href="https://kr.sidiz.com/company/safety-health-management">
+                                            안전보건경영방침
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="hamburger_top_menu">
+                                PRODUCTS<br><br>
+                                <ul class="hamburger_bottom_menu_wrap">
+                                    <li class="hamburger_bottom_menu">
+                                        <a href="https://kr.sidiz.com/product/category/gaming-chairs">
+                                            게이밍체어
+                                        </a>
+                                    </li>
+                                    <li class="hamburger_bottom_menu">
+                                        <a href="https://kr.sidiz.com/product/category/task-chairs">
+                                            데스크체어
+                                        </a>
+                                    </li>
+                                    <li class="hamburger_bottom_menu">
+                                        <a href="https://kr.sidiz.com/product/category/study-chairs">
+                                            스터디체어
+                                        </a>
+                                    </li>
+                                    <li class="hamburger_bottom_menu">
+                                        <a href="https://kr.sidiz.com/product/category/baby-chairs">
+                                            키즈&베이비체어
+                                        </a>
+                                    </li>
+                                    <li class="hamburger_bottom_menu">
+                                        <a href="https://kr.sidiz.com/product/category/interior-chairs">
+                                            인테리어체어
+                                        </a>
+                                    </li>
+                                    <li class="hamburger_bottom_menu">
+                                        <a href="https://kr.sidiz.com/product/category/accessories">
+                                            액세서리
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="hamburger_top_menu">
+                                SUPPORT<br><br>
+                                <ul class="hamburger_bottom_menu_wrap">
+                                    <li class="hamburger_bottom_menu">
+                                        <a href="https://kr.sidiz.com/customer/faq/all">
+                                            FAQ
+                                        </a>
+                                    </li>
+                                    <li class="hamburger_bottom_menu">
+                                        <a href="https://kr.sidiz.com/customer/qna">
+                                            친절상담
+                                        </a>
+                                    </li>
+                                    <li class="hamburger_bottom_menu">
+                                        <a href="https://kr.sidiz.com/customer/as">
+                                            A/S 신청
+                                        </a>
+                                    </li>
+                                    <li class="hamburger_bottom_menu">
+                                        <a href="https://kr.sidiz.com/customer/warranty">
+                                            A/S 안내
+                                        </a>
+                                    </li>
+                                    <li class="hamburger_bottom_menu">
+                                        <a href="https://kr.sidiz.com/store">
+                                            매장 찾기
+                                        </a>
+                                    </li>
+                                    <li class="hamburger_bottom_menu">
+                                        <a href="https://kr.sidiz.com/customer/serial">
+                                            품질 보증 서비스
+                                        </a>
+                                    </li>
+                                    <li class="hamburger_bottom_menu">
+                                        <a href="https://kr.sidiz.com/customer/manual">
+                                            제품가이드 다운로드
+                                        </a>
+                                    </li>
+                                    <li class="hamburger_bottom_menu">
+                                        <a href="https://kr.sidiz.com/customer/catalog">
+                                            카탈로그 다운로드
+                                        </a>
+                                    </li>
+                                    <li class="hamburger_bottom_menu">
+                                        <a href="https://kr.sidiz.com/customer/bulk">
+                                            대량 구매 문의
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>    
+            </div>
+        </header>
+        
+        <div class="main_banner">
+            <video autoplay loop muted playsinline>
+                <source src="./img/main_banner_video.mp4">
+            </video>
+        </div>
+        <div class="content">
+            <div class="map_bg"></div>
+            <div class="cont_wrap">
+                <article class="cont cont_plus">
+                    <div class="cont_plus_in">
+                        <div class="cont_plus_title">
+                            <h3>
+                                의자가 인생을 바꾼다 시디즈
+                            </h3>
+                        </div>
+                        <div class="brand_img">
+                            <img src="./img/brand.png" alt="브랜드소개">
+                        </div>
+                        <div class="cont_plus_text">
+                            <p class="cont_plus_t t_1">
+                                인생의 많은 순간, 우리는 의자와 함께합니다
+                            </p>
+                            <p class="cont_plus_t t_2 mo_hide">
+                                의자 위의 모든 순간들은 당신을 열정적이고 발전하는 삶으로 이끕니다
+                            </p>
+                            <p class="cont_plus_t t_3  mo_hide">
+                                그래서 시디즈는 의자 위 경험(Sitting Experience)을, 의자 위 사람과 그 움직임을 연구합니다
+                            </p>
+                            <p class="cont_plus_t t_4">
+                                당신이 의자 위에서 누릴 모든 경험을 위해, 그리고 그 경험이 바꿀 당신의 인생을 위해.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article class="cont cont_1">
+                    <h2 class="cont_1_title">
+                        <span class="big_t">최상의 앉음</span>
+                        <span>을 통해<br></span>
+                        <span class="big_t">열정적이고 발전하는 삶</span>
+                        <span>을 이끌어 냅니다.</span>
+                    </h2>
+                    <div class="cont_1_con">
+                        <div class="slide_box swiper-wrapper">
+                            <div class="slide swiper-slide">
+                                <div class="slide_img">
+                                    <a href="https://kr.sidiz.com/product/category/gaming-chairs">
+                                        <img src="./img/slide_1.jpg" alt="게이밍체어">
+                                    </a>
+                                    <div class="slide_text">
+                                        <div class="slide_tit">Gaming Chairs</div>
+                                        <p class="t_p">게이밍체어</p>
+                                        <p class="b_p">리얼한 게이머의<br>리얼한 생각을 담아낸</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide swiper-slide">
+                                <div class="slide_img">
+                                    <a href="https://kr.sidiz.com/product/category/task-chairs">
+                                        <img src="./img/slide_2.jpg" alt="데스크체어">
+                                    </a>
+                                    <div class="slide_text">
+                                        <div class="slide_tit">Task Chairs</div>
+                                        <p class="t_p">데스크체어</p>
+                                        <p class="b_p">나에게 딱 맞는 피팅감</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide swiper-slide">
+                                <div class="slide_img">
+                                    <a href="https://kr.sidiz.com/product/category/study-chairs">
+                                        <img src="./img/slide_3.jpg" alt="스터디체어">
+                                    </a>
+                                    <div class="slide_text">
+                                        <div class="slide_tit">Study Chairs</div>
+                                        <p class="t_p">스터디체어</p>
+                                        <p class="b_p">완벽한 집중이 필요할 때,<br>수험생추천 공부의자</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide swiper-slide">
+                                <div class="slide_img">
+                                    <a href="https://kr.sidiz.com/product/category/baby-chairs">
+                                        <img src="./img/slide_4.jpg" alt="키즈앤베이비체어">
+                                    </a>
+                                    <div class="slide_text">
+                                        <div class="slide_tit">Kids&Baby Chairs</div>
+                                        <p class="t_p">키즈앤베이비체어</p>
+                                        <p class="b_p">우리 아이를 위한<br>친구 같은 가구</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide swiper-slide">
+                                <div class="slide_img">
+                                    <a href="https://kr.sidiz.com/product/category/interior-chairs">
+                                        <img src="./img/slide_5.jpg" alt="인테리어체어">
+                                    </a>
+                                    <div class="slide_text">
+                                        <div class="slide_tit">Interior Chairs</div>
+                                        <p class="t_p">인테리어체어</p>
+                                        <p class="b_p">내추럴 다이닝의 완성,<br>나만을 위한 아늑함</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide swiper-slide">
+                                <div class="slide_img">
+                                    <a href="https://kr.sidiz.com/product/category/accessories">
+                                        <img src="./img/slide_6.jpg" alt="액세서리">
+                                    </a>
+                                    <div class="slide_text">
+                                        <div class="slide_tit">Acc</div>
+                                        <p class="t_p">액세서리</p>
+                                        <p class="b_p">나만의 의자 만들기</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="but_box">
+                            <div class="right">
+                                <img src="./img/right_but.png" alt="오른쪽화살표">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cont cont_2">
+                    <div class="cont_2_con">
+                        <div class="t50">
+                            <img src="./img/tilting_3.png" alt="t50사진">
+                        </div>
+                        <div class="t50_1">
+                            <img src="./img/tilting_2.png" alt="틸팅효과">
+                            <div class="fix">
+                                <div class="won">
+                                    <img src="./img/ani.svg" alt="로고동그라미">
+                                </div>
+                                <div class="logo_text">
+                                    T50
+                                </div>
+                            </div>
+                            <div class="func_text">
+                                <div class="cont_2_text">
+                                    <h2>세밀한 맞춤 조절이<br>
+                                        가능한 등판 젖힘 기능</h2>
+                                    <p>
+                                        최소 105°~ 최대 130° 조절 가능
+                                    </p>
+                                </div>
+                                <div class="text_wrap">
+                                    <h2>싱크로나이즈드 틸팅</h2>
+                                    <p>
+                                        의자를 뒤로 젖혔을 때<br>
+                                        등판과 좌판이 다른 각도로<br>
+                                        기울어져 요추를 등판에<br>
+                                        밀착시켜줍니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </article>
+
+                <div class="cont cont_3">
+                    <div class="move_box">
+                        <ul class="left_move">
+                            <li>#SIDIZ</li>
+                            <li>#USER GUIDE</li>
+                            <li>#ASSEMBLY GUIDE</li>
+                            <li>#GCPRO</li>
+                            <li>#T80</li>
+                            <li>#TASK CHAIR</li>
+                            <li>#YOUTUBE</li>
+                        </ul>
+                        <ul class="right_move">
+                            <li>#SIDIZ</li>
+                            <li>#USER GUIDE</li>
+                            <li>#ASSEMBLY GUIDE</li>
+                            <li>#GCPRO</li>
+                            <li>#T80</li>
+                            <li>#TASK CHAIR</li>
+                            <li>#YOUTUBE</li>
+                        </ul>
+                        <!-- <div class="left_move">
+                            <img src="./img/main/test_word.svg" alt="움직이는 글자">
+                        </div>
+                        <div class="right_move">
+                            <img src="./img/main/test_word.svg" alt="움직이는 글자">
+                        </div> -->
+                    </div>
+                    <div class="iframe_box">
+                        <iframe class="tap_hide" src="https://www.youtube.com/embed/XdqI01Pnnek?si=lKHz7FNvH5I7H8QJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/XaMVH0Mqakw?si=o9l4csaASjhXnP6r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/1eH7ViuW49I?si=PD6_0wYEEvJfOmh2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <article class="cont cont_4">
+                    <div class="cont_4_mo_hide">
+                        <div class="cont_4_hide">
+                            <div class="cont_4_in">
+                                <p class="cont_4_t_p">
+                                    인생의 많은 순간을 함께 하는 의자.<br>
+                                    의자 위 모든 경험이 결국 우리의 인생을 바꾼다는 것을 알기에,<br>
+                                    많은 분들이 좋은 의자와 오래 함께 하실 수 있도록
+                                </p>
+                                <p class="cont_4_b_p">
+                                    시디즈가 5년 품질 보증 서비스를 실시합니다.
+                                </p>
+                                <h3>지금, 제품 등록을 해 주세요.</h3>
+                                <div class="cont_4_bottom">
+                                    <div class="bottom_1">
+                                        <a href="https://kr.sidiz.com/customer/warranty">
+                                            제품 등록하기
+                                        </a>
+                                    </div>
+                                    <div class="bottom_2">
+                                        <a href="https://kr.sidiz.com/customer/warranty-info">
+                                            WARRANTY 정책 상세보기
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cont_4_img">
+                            <img src="./img/registration.PNG" alt="정품등록사진">
+                        </div>
+                    </div>
+                </article>
+                <div class="cont_5">
+                    <div class="cont_5_con">
+                        <a href="https://kr.sidiz.com/store">
+                            <img src="./img/map_search_slim.png" alt="매장찾기버튼">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="main_footer pc_footer">
+            <div class="inner_align">   
+                <div class="footer_logo">
+                    <a href="#">
+                        <img src="./img/logo_new.svg" alt="그림로고">
+                    </a>
+                </div>
+                <div class="footer_right">
+                    <ul class="in_footer footer_top">
+                        <li>
+                            <a href="https://kr.sidiz.com/ir/noticeList?page=1">투자정보</a>
+                        </li>
+                        <li>
+                            <a href="https://kr.sidiz.com/company/business">ABOUT SIDIZ</a>
+                        </li>
+                        <li>
+                            <a href="https://kr.sidiz.com/product/category/gaming-chairs">제품</a>
+                        </li>
+                        <li>
+                            <a href="https://kr.sidiz.com/customer/faq/all">SUPPORT</a>
+                        </li>
+                        <li>
+                            <a href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fbizmessage.
+                            kakao.com%2Fchat%2FbsbnIe_lpDUwBGQJJgWqhAf8qH_smEtv_c_acLTkgmU%3Frf%3Dhttps%3A%2F%2Fkr
+                            .sidiz.com%2F#login">컨텍센터</a>
+                        </li>
+                    </ul> 
+                    <div class="in_footer footer_middle">
+                        <ul class="footer_text">
+                            <li>(주)시디즈</li>
+                            <li>대표이사 · 강성문</li>
+                            <li>사업자등록번호 · 215-87-48121</li>
+                            <li>부가통신사업신고필증 · 022094</spanli>
+                            <li>경기도 평택시 세교산단로 67-20 (세교동)</li>
+                            <li>통신판매신고번호 · 2018-경기평택-0099</li>
+                        </ul>
+                    </div>
+                    <div class="in_footer footer_bottom">
+                        <span>
+                            Copyright (c) 2019 SIDIZ, INC. All rights reserved.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <footer class="main_footer tab_footer">
+            <div class="inner_align">
+                <div class="footer_left"> 
+                    <div class="footer_logo">
+                        <a href="#">
+                            <img src="./img/logo_new.svg" alt="그림로고">
+                        </a>
+                        <span class="company_name">(주)시디즈</span>
+                    </div>
+                    
+                    <div class="in_footer footer_middle">
+                        <ul class="footer_text">
+                            <li>대표이사 · 강성문</li>
+                            <li>사업자등록번호 · 215-87-48121</li>
+                            <li>부가통신사업신고필증 · 022094</spanli>
+                            <li>경기도 평택시 세교산단로 67-20 (세교동)</li>
+                            <li>통신판매신고번호 · 2018-경기평택-0099</li>
+                            <li class="copy">Copyright (c) 2019 SIDIZ, INC. All rights reserved.</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="in_footer footer_bottom">
+                        <span>
+                            Copyright (c) 2019 SIDIZ, INC. All rights reserved.
+                        </span>
+                    </div> -->
+                </div>
+                <div class="footer_right">
+                    <ul class="in_footer footer_top">
+                        <li>
+                            <a href="https://kr.sidiz.com/ir/noticeList?page=1">투자정보</a>
+                        </li>
+                        <li>
+                            <a href="https://kr.sidiz.com/company/business">ABOUT SIDIZ</a>
+                        </li>
+                        <li>
+                            <a href="https://kr.sidiz.com/product/category/gaming-chairs">제품</a>
+                        </li>
+                        <li>
+                            <a href="https://kr.sidiz.com/customer/faq/all">SUPPORT</a>
+                        </li>
+                        <li>
+                            <a href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fbizmessage.
+                            kakao.com%2Fchat%2FbsbnIe_lpDUwBGQJJgWqhAf8qH_smEtv_c_acLTkgmU%3Frf%3Dhttps%3A%2F%2Fkr
+                            .sidiz.com%2F#login">컨텍센터</a>
+                        </li>
+                    </ul>                    
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
