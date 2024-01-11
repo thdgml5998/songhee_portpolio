@@ -6,7 +6,6 @@ $(document).ready(function(){
 
     
     $(window).resize(function(){
-        history.go(0);
         layout();
         //$(window).scrollTop(0);
         $('html,body').animate({
