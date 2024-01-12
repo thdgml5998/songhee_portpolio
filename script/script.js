@@ -6,6 +6,8 @@ $(document).ready(function(){
 
     
     $(window).resize(function(){
+       
+        //history.go(0);
         layout();
         //$(window).scrollTop(0);
         $('html,body').animate({
@@ -637,70 +639,28 @@ $(document).ready(function(){
                 sct=st;
             }
         }
-        // else if(ww<960){
-        //     if(sct<=st){
-        //         d='down';
-        //         if(st>=0 && st<m_sh_1){
-        //             if(st>=0 && st<m_sh_1*0.5){
-        //                 $(".m_con_in").css({
-        //                     transform:'rotateX('+90+'deg)'
-        //                 }) 
-        //             }
-        //             if(st>m_sh_1*0.7){
-        //                 $(".m_menu_bg").fadeIn(500);
-        //                 $(".m_p_photo").animate({
-        //                     height:"60vw"
-        //                 },1000);
-        //                 $(".m_cont_2").delay(500).slideDown(5000);
-        //             }
-        //         }
-        //         if(st>=m_sh_1 && st<m_sh_12){
-        //             if(st>m_sh_12*0.7){
-        //                 $(".m_cont_3").slideDown(5000);
-        //             }
-        //         }
-        //         if(st>=m_sh_12 && st<m_sh_123){
-        //             if(st>m_sh_12*0.7){
-        //                 $(".m_cont_4").slideDown(5000);
-        //             }
-        //         }
-        //         sct=st;
-                
-        //     }else if(sct>st){
-        //         d='up';
-        //         if(st>=0 && st<m_sh_1){
-        //             if(st>=0 && st<m_sh_1*0.5){
-        //                 $(".m_con_in").css({
-        //                     transform:'rotateX('+0+'deg)'
-        //                 }) 
-        //                 $(".m_menu_bg").fadeOut(500);
-        //             }
-        //         }
-        //         sct=st;
-        //     }
-        // }
     })
 
-    //더보기 클릭이벤트
-    $(".more_btn").on("click",function(){
-        $(".more_in").fadeIn(500);
-    })
-    $(".close").on("click",function(){
-        $(".more_in").fadeOut(500);
-    })
+    //pc 작품 더보기 클릭이벤트
+    // $(".more_btn").on("click",function(){
+    //     $(".more_in").fadeIn(500);
+    // })
+    // $(".close").on("click",function(){
+    //     $(".more_in").fadeOut(500);
+    // })
 
 
-    //pc 스와이퍼
-    const pc_swiper = new Swiper('.swiper_pc', {
-        direction: 'horizontal',
-        loop: true,
-        navigation: {
-            nextEl: '.swiper-button-next', //다음버튼
-            prevEl: '.swiper-button-prev', //이전버튼
-            //=>화살표
-        },
+    //pc 작품 추가시 더보기 속 스와이퍼
+    // const pc_swiper = new Swiper('.swiper_pc', {
+    //     direction: 'horizontal',
+    //     loop: true,
+    //     navigation: {
+    //         nextEl: '.swiper-button-next', 
+    //         prevEl: '.swiper-button-prev', 
+            
+    //     },
         
-    })
+    // })
 
     //모바일 스와이퍼
     const swiper = new Swiper('.swiper', {
@@ -814,7 +774,6 @@ $(document).ready(function(){
                     opacity:0.8,
                     transitionDuration: "0.5s"
                 })
-                // $(".m_cont_1").slideDown(2000);
             })
             
             
@@ -936,32 +895,6 @@ $(document).ready(function(){
         })
         h_zero(".under_big_line");
     })
-
-
-    //모바일메뉴클릭
-    // $(".light_text").click(function(){
-    //     $(".click_change").fadeIn(500);
-    //     $(".top_s").css({
-    //         top:"50%",
-    //         transform: "translateY(-50%) rotate(45deg)",
-    //         transitionDuration: "0.5s"
-    //     })
-    //     $(".bottom_s").css({
-    //         bottom: "50%",
-    //         transform: "translateY(50%) rotate(-45deg)",
-    //         transitionDuration: "0.5s"
-    //     })
-    //     $(".m_menu_in").slideDown(500);
-    // })
-    // $(".click_change").click(function(){
-    //     clear_menu();
-    // })
-
-    // $(".m_menu_in>a").click(function(){
-    //     $(".m_menu_in").slideUp(500);
-    //     $(".click_change").fadeOut(500);
-    // })
-
 
 
 }) 
