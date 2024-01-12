@@ -24,6 +24,18 @@ $(document).ready(function(){
         }
     })
 
+    //지사찾기 이동
+    $("#gobranch").click(function(){
+        let address = $("#branch_office option:selected").attr("value");  
+        window.open(address, "_blank");   
+    });
+    $(".search_btn").click(function(){
+        let address = $(this).attr("value");  
+        window.open(address, "_blank");   
+    });
+
+
+
     //하단 자동 슬라이드배너
     let auto_slide=setInterval(function(){
         slide_width=$(".slide").width();
@@ -36,6 +48,12 @@ $(document).ready(function(){
             })
         })
     })
+
+    //패밀리사이트 바로가기
+    $("#gosite").click(function(){
+        let address = $("#familySite option:selected").attr("value");  
+        window.open(address, "_blank");   
+    });
 
 
 
