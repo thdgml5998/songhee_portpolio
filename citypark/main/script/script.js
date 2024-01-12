@@ -374,6 +374,12 @@ $(document).ready(function(){
     })
 
 
+    //패밀리사이트 바로가기
+    $("#gosite").click(function(){
+        let address = $("#familySite option:selected").attr("value");  
+        window.open(address, "_blank");   
+    });
+
 
 
     //모바일메뉴클릭/////////////////////////////////////////////////////
