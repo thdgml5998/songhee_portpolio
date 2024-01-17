@@ -4,6 +4,8 @@ $(document).ready(function(){
     window.addEventListener("resize",()=>{
         history.go(0);
         layout();
+
+
     })
 
     // 2차메뉴
@@ -14,10 +16,63 @@ $(document).ready(function(){
         $(".sub_menu",this).stop().slideUp(500);
     })
 
+    //모바일 메뉴
+    $(".mo_menu").click(function(){
+        $(".mo_hide_menu").css({
+            width:"100%",
+            display:"block"
+        })
+    })
+    
+    $(".mo_sub_menu").hide().first().show();
+    $(".mo_top_menu").first().css({
+        borderRadius:"10px",
+        background:"pink"
+    })
+    $(".mo_bottom_menu").mouseenter(function(){
+        $(this).css({
+            borderBottom: "2px solid #99cc33",
+            boxSizing: "border-box"
+        })
+    })
+    $(".mo_bottom_menu").mouseleave(function(){
+        $(this).css({
+            borderBottom: "none"
+        })
+    })
+
+    $(".mo_top_menu").click(function(){
+        $(".mo_top_menu").css({
+            borderRadius:"none",
+            background:"#e0e0e0"
+        })
+        $(this).css({
+            borderRadius:"10px",
+            background:"pink"
+        })
+        $(".mo_sub_menu").hide();
+        $(".mo_sub_menu",this).show();
+    })
+
+    $(".mo_menu_close").click(function(){
+        $(".mo_hide_menu").css({
+            display:"none"
+        })
+    })
+
+
+
+
     //배너 스와이퍼
     const swiper = new Swiper('.swiper', {
         direction: 'horizontal',
         loop: true,
+        grabCursor:true,
+        speed:2000,
+        autoplay:{
+            delete:1000,
+            disableOnInteraction:true
+        },
         navigation: {
             nextEl: '.swiper-button-next', 
             prevEl: '.swiper-button-prev'
@@ -99,15 +154,54 @@ $(document).ready(function(){
         $(".main_footer").css({
             height:ww*0.1
         })
+
+        $(".mo_wrap").css({
+            display:"none"
+        })
     
         
         
 
 
         if(ww<1200 && ww>=860){
-
+            $(".side_box").css({
+                top:0,
+                height:ww*0.2
+            })
+            $(".cont_1").css({
+                height:ww*0.5
+            })
+            $(".cont_2").css({
+                height:ww*0.2
+            })
+            $(".cont_3").css({
+                height:ww*0.2
+            })
+            $(".cont_4").css({
+                height:ww*0.2
+            })
         }else if(ww<860){
-
+            $(".wrap").css({
+                display:"none"
+            })
+            $(".mo_wrap").css({
+                display:"block",
+                width:ww
+            })
+            $(".main_header").css({
+                height:"9vh"
+            })
+            $(".mo_hide_menu").css({
+                top:0,
+                left:0,
+                height:"100vh"
+            })
+            $(".cont_top").css({
+                height:ww*0.05
+            })
+            $(".cont_1").css({
+                height:ww*0.65
+            })
         }
     }
 
