@@ -26,7 +26,6 @@ $(document).ready(function(){
     
     $(".mo_sub_menu").hide().first().show();
     $(".mo_top_menu").first().css({
-        borderRadius:"10px",
         background:"pink"
     })
     $(".mo_bottom_menu").mouseenter(function(){
@@ -43,11 +42,9 @@ $(document).ready(function(){
 
     $(".mo_top_menu").click(function(){
         $(".mo_top_menu").css({
-            borderRadius:"none",
             background:"#e0e0e0"
         })
         $(this).css({
-            borderRadius:"10px",
             background:"pink"
         })
         $(".mo_sub_menu").hide();
@@ -201,6 +198,33 @@ $(document).ready(function(){
             })
             $(".cont_1").css({
                 height:ww*0.65
+            })
+            $(".cont_2").css({
+                height:ww*0.2
+            })
+            $(".cont_3").css({
+                height:ww*0.25
+            })
+            $(".cont_4").css({
+                height:ww*1.2
+            })
+            $(".cont_5").css({
+                height:ww*0.4
+            })
+            $(".cont_6").css({
+                height:ww*0.4
+            })
+            $(".cont_7").css({
+                height:ww*0.5
+            })
+            $(".cont_8").css({
+                height:ww*0.5
+            })
+            $(".side_box").css({
+                height:ww*0.4
+            })
+            $(".main_footer").css({
+                height:ww*0.15
             })
         }
     }
