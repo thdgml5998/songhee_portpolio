@@ -416,6 +416,7 @@
     }
     .news_right {
         width: 55%;
+        height: 100%;
     }
     .news_top {
         display: flex;
@@ -560,7 +561,7 @@
         justify-content: space-between;
     }
     .qr_left {
-        width: 50%;
+        width: 45%;
         display: flex;
         flex-direction: column;
         justify-content: end;
@@ -574,7 +575,7 @@
         float: right;
     }
     .iphone {
-        width: 50%;
+        width: 45%;
     }
     .side_2 {
         position: relative;
