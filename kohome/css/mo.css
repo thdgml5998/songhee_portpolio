@@ -292,7 +292,7 @@
     }
 
     /* cont_5,6 예비입주자 */
-    .cont_5_in,.cont_6_in {
+    .cont_5_in,.cont_6_in,.cont_7_in {
         height: 100%;
     }
     .in_top {
@@ -484,7 +484,6 @@
         margin: 0 auto;
         background: #666666;
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
         padding: 15px;
         box-sizing: border-box;
