@@ -603,7 +603,7 @@
         width: 50%;
         height: 0;
         overflow: hidden;
-        top: 325px;
+        top: 220px;
         left: 25%;
         position: absolute;
         
@@ -624,7 +624,7 @@
         height: 100px;
         display: flex;
         align-items: center;
-        margin: 40px auto;
+        margin: 30px auto;
     }
     .c_con>span {
         text-align: center;
