@@ -216,7 +216,7 @@ $(document).ready(function(){
                     if(st==4400){
                         move_lines(50);
                         $(".contact_con").animate({
-                            height:"50%"
+                            height:"60%"
                         },500,function(){
                             $(".star").css({
                                 display:"block"
@@ -500,7 +500,7 @@ $(document).ready(function(){
                             display:"block"
                         })
                         $(".contact_con").delay(500).animate({
-                            height:"50%"
+                            height:"60%"
                         },500)
                         $(".copy").delay(500).fadeIn(1000);                    
                     }
