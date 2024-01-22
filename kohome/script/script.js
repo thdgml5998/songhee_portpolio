@@ -2,7 +2,6 @@ $(document).ready(function(){
     layout();
 
     window.addEventListener("resize",()=>{
-        history.go(0);
         layout();
 
 
