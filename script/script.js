@@ -1,5 +1,7 @@
 $(document).ready(function(){
-  
+    AOS.init();
+    //tab 스크롤 fade-in cdn사용
+
     let ww=$(window).width();
     let box_index=0;
     let direction="";
@@ -27,7 +29,7 @@ $(document).ready(function(){
         }
     })
 
-    //마우스휠 
+    //마우스휠 PC 이벤트
     function wrap_scroll_down(){
         ww=$(window).width();
         wh=$(window).height();
@@ -464,6 +466,7 @@ $(document).ready(function(){
     })
 
 
+
     //메뉴클릭
     $('.menu_1').click(function(){
         menu_light(0);
@@ -730,7 +733,9 @@ $(document).ready(function(){
                 $(".tab_cont_1").slideDown(2000);
             })
             $(".click_change").addClass("hide");
-
+            $(".tab_p_text").css({
+                height:ww*1.5
+            })
 
             
 
