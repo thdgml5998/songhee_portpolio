@@ -186,13 +186,31 @@
     }
     .tab_p_text {
         text-align: center;
+        position: relative;
     }
     .p_text {
+        width: 100%;
+        height: calc(100% / 5);
         margin-bottom: 100px;
         font-size: 4vw;
+        position: absolute;
+        /* left: 0; */
+        overflow: hidden;
+    }
+    .text_1 {
+        top: 0;
+    }
+    .text_2 {
+        top: 25%;
+    }
+    .text_3 {
+        top: 50%;
+    }
+    .text_4 {
+        top: 75%;
     }
     .p_text>h2 {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
     .p_text>span {
         display: block;
