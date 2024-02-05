@@ -463,19 +463,32 @@
         line-height: 50px;
         cursor: pointer;
         transition: 0.5s;
+        opacity: 0;
+        animation: more_ani 1.5s infinite linear;
     }
     .more_btn:hover {
         background: #ffffff;
         color: #333333;
     }
+
+    @keyframes more_ani{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+
     .swiper_pc {
         width: 80%;
         height: 80%;
-        background: #ffffffe0;
+        background: #ffffffef;
         position: fixed;
         top: 10%;
         left: 10%;
         display: none;
+        overflow: hidden;
     }
     .swiper-slide {
         position: relative;
@@ -503,7 +516,7 @@
         width: 45%;
     }
     .more_con_right {
-        width: 30%;
+        width: 35%;
     }
     .swiper_img {
         object-fit: contain;
@@ -513,7 +526,7 @@
     .more_title {
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         margin-bottom: 50px;
     }
     .more_title>a {
@@ -528,12 +541,6 @@
     }
     .more_info {
         margin-bottom: 50px;
-    }
-    .more_con_2 {
-        background: pink;
-    }
-    .more_con_3 {
-        background: skyblue;
     }
     .span_f {
         font-weight: 700;

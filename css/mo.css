@@ -252,6 +252,9 @@
         justify-content: space-between;
         margin-bottom: 50px;
     }
+    .content_center {
+        justify-content: center;
+    }
     .con_3_title>a {
         display: block;
         border: 2px solid #ffffff;
