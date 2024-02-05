@@ -179,6 +179,9 @@ $(document).ready(function(){
                 $(".more_btn").fadeIn(500);               
             }
             else if(box_index==12){
+                $(".more_btn").css({
+                    display:"none"
+                }); 
                 $(".a_bottom_big_line").animate({
                     height:150
                 },1000,function(){
@@ -565,25 +568,25 @@ $(document).ready(function(){
 
 
     //pc 작품 더보기 클릭이벤트
-    // $(".more_btn").on("click",function(){
-    //     $(".more_in").fadeIn(500);
-    // })
-    // $(".close").on("click",function(){
-    //     $(".more_in").fadeOut(500);
-    // })
+    $(".more_btn").on("click",function(){
+        $(".more_in").fadeIn(500);
+    })
+    $(".close").on("click",function(){
+        $(".more_in").fadeOut(500);
+    })
 
 
     //pc 작품 추가시 더보기 속 스와이퍼
-    // const pc_swiper = new Swiper('.swiper_pc', {
-    //     direction: 'horizontal',
-    //     loop: true,
-    //     navigation: {
-    //         nextEl: '.swiper-button-next', 
-    //         prevEl: '.swiper-button-prev', 
+    const pc_swiper = new Swiper('.swiper_pc', {
+        direction: 'horizontal',
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next', 
+            prevEl: '.swiper-button-prev', 
             
-    //     },
+        },
         
-    // })
+    })
 
 
     //탭메뉴클릭
