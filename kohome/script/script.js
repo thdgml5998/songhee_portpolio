@@ -193,7 +193,7 @@ $(document).ready(function(){
                 height:"100vh"
             })
             $(".cont_top").css({
-                height:ww*0.05
+                height:ww*0.1
             })
             $(".cont_1").css({
                 height:ww*0.65
@@ -205,7 +205,7 @@ $(document).ready(function(){
                 height:ww*0.25
             })
             $(".cont_4").css({
-                height:ww*1.2
+                height:ww*1.5
             })
             $(".cont_5").css({
                 height:ww*0.4
@@ -223,7 +223,7 @@ $(document).ready(function(){
                 height:ww*0.4
             })
             $(".main_footer").css({
-                height:ww*0.15
+                height:ww*0.3
             })
         }
     }
