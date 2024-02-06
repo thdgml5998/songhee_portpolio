@@ -19,12 +19,12 @@
         object-fit: contain;
     }
     .tit {
-        font-size: 3vw;
+        font-size: 4vw;
         margin-bottom: 20px;
     }
     .cont {
         margin-bottom: 50px;
-        padding: 25px 20px;
+        padding: 10px 15px;
         box-sizing: border-box;
     }
 
@@ -87,12 +87,12 @@
     .mo_hide_menu .top_s {
         position: absolute;
         top: 50%;
-        transform: translateY(-50%) rotate(45deg);
+        transform: translateY(-1px) rotate(45deg);
     }
     .mo_hide_menu .bottom_s {
         position: absolute;
         top: 50%;
-        transform: translateY(50%) rotate(-45deg);
+        transform:rotate(-45deg);
     }
     
     .main_menu {
@@ -177,10 +177,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 20px;
     }
     .cont_tit {
         width: 100%;
-        font-size: 3.5vw;
+        font-size: 4.5vw;
         font-weight: 900;
         letter-spacing: 2px;
     }
@@ -239,6 +240,9 @@
         flex-direction: column;
         justify-content: space-between;
     }
+    .call_in>.tit {
+        margin-bottom: 0;
+    }
     .call_num {
         font-size: 5vw;
         font-weight: 900;
@@ -250,15 +254,17 @@
 
 
     /* cont_4 퀵메뉴 */
+    .cont_4_in {
+        height: 100%;
+    }
     .q_menu {
         display: block;
         width: 30%;
         text-align: center;
-        font-size: 2.5vw;
+        font-size: 3.5vw;
         border-radius: 5px;
     }
     .quick_in {
-        height: 80%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -292,13 +298,18 @@
     }
 
     /* cont_5,6 예비입주자 */
-    .cont_5_in,.cont_6_in,.cont_7_in {
+    .cont_5_in,.cont_6_in{
+        width: 100%;
         height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
     }
     .in_top {
+        width: 100%;
         display: flex;
         justify-content: space-between;
-        margin-bottom: 20px;
     }
     .in_top>.tit {
         margin-bottom: 0;
@@ -316,13 +327,17 @@
         width: 50%;
     }
     .in_bottom {
-        height: 80%;
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
     }
     .noti {
-        height: 25%;
-        font-size: 2.5vw;
-        padding: 10px;
-        box-sizing: border-box;
+        width: 100%;
+        /* height: 25%; */
+        font-size: 3.3vw;
     }
     .noti>a {
         display: block;
@@ -353,16 +368,18 @@
     .cont_7 {
         background: url(../img/recruit.png) no-repeat 100%/cover;
     }
+    .cont_7_in {
+        height: 100%;
+    }
     .baro_go>a {
         display: block;
-        width: 50%;
-        padding: 5px 10px;
-        box-sizing: border-box;
+        width: 70%;
+        padding: 10px;
         border-radius: 20px;
         background: #ffffff;
         text-align: center;
         transition: 0.3s;
-        font-size: 2.5vw;
+        font-size: 3.2vw;
     }
     .baro_go>a:hover {
         background: #666666;
@@ -375,7 +392,7 @@
         justify-content: space-evenly;
     }
     .recruit_right>p {
-        font-size: 2.5vw;
+        font-size: 3.3vw;
         font-weight: 500;
         line-height: 1.4;
     }
@@ -397,11 +414,11 @@
         justify-content: space-between;
     }
     .news_left>p {
-        font-size: 2.5vw;
+        font-size: 3.3vw;
         line-height: 1.4;
     }
     .news_left>span {
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
     .news_right {
         width: 55%;
@@ -437,7 +454,7 @@
         margin-bottom: 0;
     }
     .side p {
-        font-size: 2vw;
+        font-size: 3vw;
         line-height: 1.5;
     }
     .side_2 {
@@ -472,14 +489,14 @@
     /* footer */
     .main_footer {
         background: #666666;
-        font-size: 1.5vw;
+        font-size: 2.5vw;
         color: #ffffff;
     }
     .main_footer a {
         color: #ffffff;
     }
     .footer_inner {
-        width: 70%;
+        width: 80%;
         height: 100%;
         margin: 0 auto;
         background: #666666;
@@ -500,10 +517,10 @@
     }
     .foot_logo {
         width: 30%;
-        margin-right: 50px;
+        margin-right: 20px;
     }
     .f_info {
-        width: 60%;
+        width: 80%;
         display: flex;
         flex-wrap: wrap;
         align-content: space-between;
