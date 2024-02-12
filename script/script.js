@@ -6,7 +6,9 @@ $(document).ready(function(){
     let box_index=0;
     let direction="";
 
-    let before_time=new Date().getTime(); //휠이벤트 시간값 넣어줘서 중첩 무시하기 20231023
+    let before_time=new Date().getTime(); 
+    //휠이벤트 시간값 넣어줘서 중첩 무시하기
+
     let now_time=new Date().getTime;
 
     layout();
@@ -16,10 +18,6 @@ $(document).ready(function(){
         ww=$(window).width();
     
         layout();
-        //$(window).scrollTop(0);
-        // $('html,body').animate({
-        //     scrollTop:0
-        // })
         $(".under_big_line").animate({
             height:0
         })
@@ -31,6 +29,7 @@ $(document).ready(function(){
 
     //마우스휠 PC 이벤트
     function wrap_scroll_down(){
+        //스크롤 내릴때
         ww=$(window).width();
         wh=$(window).height();
         
@@ -108,6 +107,9 @@ $(document).ready(function(){
                     })
                     $(".con_1").delay(300).fadeIn(500);
                     //첫번째소개페이지 보이기
+                    $(".con_2").css({
+                        display:"none"
+                    })
                 })
             }
                     
@@ -177,6 +179,7 @@ $(document).ready(function(){
                 box_y(4);
                 info_reset(0);     
                 $(".more_btn").fadeIn(500);               
+                $(".view_more").fadeIn(500);               
             }
             else if(box_index==12){
                 $(".more_btn").css({
@@ -225,6 +228,7 @@ $(document).ready(function(){
 
 
     function wrap_scroll_up(){
+        //스크롤 올릴때
         ww=$(window).width();
         wh=$(window).height();
 
@@ -262,9 +266,6 @@ $(document).ready(function(){
             menu_off(1);
             menu_off(2);
 
-            // $(".wrap").animate({
-            //     top:-((box_index-3)*100)-1400
-            // })
                
             if(box_index==3){
                 $(".con_1").fadeOut(500); 
@@ -288,14 +289,6 @@ $(document).ready(function(){
                 $(".con_2").fadeOut(500);
                 $(".con_1").fadeIn(500);
             }
-            // else if(box_index==5){
-            //     $(".wrap").animate({
-            //         top:-((box_index-3)*100)-1400
-            //     })
-            //     $(".con_1").fadeOut(500);
-            //     $(".con_2").fadeIn(500);
-            //     move_lines(50);
-            // }
         }
 
 
@@ -470,8 +463,8 @@ $(document).ready(function(){
 
 
 
-    //메뉴클릭
-    $('.menu_1').click(function(){
+    //pc 메뉴클릭 이벤트
+    $(".menu_1").click(function(){
         menu_light(0);
         menu_off(1);
         menu_off(2);
@@ -496,7 +489,7 @@ $(document).ready(function(){
         })
     
     })
-    $('.menu_2').click(function(){
+    $(".menu_2").click(function(){
         menu_light(1);
         menu_off(0);
         menu_off(2);
@@ -525,7 +518,7 @@ $(document).ready(function(){
         })
     })
 
-    $('.menu_3').click(function(){
+    $(".menu_3").click(function(){
         menu_light(2);
         menu_off(0);
         menu_off(1);
@@ -568,21 +561,23 @@ $(document).ready(function(){
 
 
     //pc 작품 더보기 클릭이벤트
-    $(".more_btn").on("click",function(){
+    $(".view_more").on("click",function(){
+        $(this).fadeOut();
         $(".more_in").fadeIn(500);
     })
     $(".close").on("click",function(){
         $(".more_in").fadeOut(500);
+        $(".more_btn").fadeOut(500);
     })
 
 
-    //pc 작품 추가시 더보기 속 스와이퍼
-    const pc_swiper = new Swiper('.swiper_pc', {
+    //pc 작품 더보기 속 스와이퍼
+    const pc_swiper = new Swiper(".swiper_pc", {
         direction: 'horizontal',
         loop: true,
         navigation: {
-            nextEl: '.swiper-button-next', 
-            prevEl: '.swiper-button-prev', 
+            nextEl: ".swiper-button-next", 
+            prevEl: ".swiper-button-prev", 
             
         },
         
@@ -614,7 +609,7 @@ $(document).ready(function(){
     })
 
 
-
+    //탭메뉴 목록 안보이게
     function clear_menu(){
         $(".top_s").css({
             top:0,
