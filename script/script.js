@@ -390,7 +390,7 @@ $(document).ready(function(){
                     top:-3200
                 },1000,function(){
                     box_index=11;
-                    
+                    $(".view_more").fadeIn(500);
                     $(".more_btn").fadeIn(500);  
                     //추가작품버튼
 
